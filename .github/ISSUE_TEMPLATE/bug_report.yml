@@ -1,0 +1,31 @@
+name: Bug report
+description: Something is not working as expected
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Type ...
+        3. Click ...
+    validations:
+      required: true
+  - type: input
+    id: input
+    attributes:
+      label: What did you type into the box? (if relevant)
+      description: Please do not share private information.
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: Chrome 130 on Android 15
